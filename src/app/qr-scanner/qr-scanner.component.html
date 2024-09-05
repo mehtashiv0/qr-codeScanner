@@ -1,0 +1,13 @@
+<div>
+    <h2>QR Code Scanner</h2>
+    <div id="reader" style="width:500px;"></div>
+  
+    <!-- Display Scanned Data -->
+    <div *ngIf="scannedData">
+      <h3>Scanned Data:</h3>
+      <div *ngFor="let field of dataFields; let i = index">
+        <p>Data {{ i + 1 }}: {{ field }}</p>
+      </div>
+    </div>
+  </div>
+  
